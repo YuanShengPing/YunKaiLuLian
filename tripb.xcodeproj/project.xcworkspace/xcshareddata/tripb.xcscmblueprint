@@ -1,0 +1,58 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C1F731283EA2B7100FB8F1AA3E6EC4FCEC53A929",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2A25B847AA6C6CFED8A6E97FF903B11EE3441086" : 0,
+    "C408967C15286583A732BE59CD98A34CECCABB85" : 0,
+    "D2885296440547CB23891301E79B480A22EAC5F6" : 0,
+    "5EFECDFE65BF97869F65DBA61EC0ABC4C4D8B31D" : 0,
+    "EF51387A5AF28E4351AFB0302884600583A438B5" : 0,
+    "C1F731283EA2B7100FB8F1AA3E6EC4FCEC53A929" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A28D8ECE-3420-448D-A92B-05B18E756994",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2A25B847AA6C6CFED8A6E97FF903B11EE3441086" : "tripb\/tripb\/Class\/Home\/controller\/HYZBadgeView\/",
+    "C408967C15286583A732BE59CD98A34CECCABB85" : "tripb\/",
+    "D2885296440547CB23891301E79B480A22EAC5F6" : "tripb\/tripb\/Class\/Frameworks\/KSCrash\/",
+    "5EFECDFE65BF97869F65DBA61EC0ABC4C4D8B31D" : "tripb\/tripb\/Class\/Trip\/model\/badgeValue\/",
+    "EF51387A5AF28E4351AFB0302884600583A438B5" : "tripb\/tripb\/Class\/Frame\/JSONKit\/",
+    "C1F731283EA2B7100FB8F1AA3E6EC4FCEC53A929" : "YunKaiLuLian\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "tripb",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "tripb.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/caty\/HYZBadgeView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2A25B847AA6C6CFED8A6E97FF903B11EE3441086"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Lidalu\/badgeValue-.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5EFECDFE65BF97869F65DBA61EC0ABC4C4D8B31D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/YuanShengPing\/YunKaiLuLian.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C1F731283EA2B7100FB8F1AA3E6EC4FCEC53A929"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "inc.tripb.cn:shiwf\/TripMac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C408967C15286583A732BE59CD98A34CECCABB85"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kstenerud\/KSCrash.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D2885296440547CB23891301E79B480A22EAC5F6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/johnezang\/JSONKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EF51387A5AF28E4351AFB0302884600583A438B5"
+    }
+  ]
+}

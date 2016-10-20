@@ -1,0 +1,108 @@
+//
+//  PrefixHeader.pch
+//  tripb
+//
+//  Created by 云开互联 on 16/4/20.
+//  Copyright © 2016年 tripb. All rights reserved.
+//
+#ifdef DEBUG
+#define NSLog(...) NSLog( __VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIView+XYView.h"
+#import "LoginState.h"
+#import "ZDBombBox.h"
+#import "UIColor-RGB.h"
+#import "MASConstraintMaker.h"
+#import "View+MASAdditions.h"
+#import "AlertActionTool.h"
+#import "DanLi.h"
+#import "URLstate.h"
+
+#define AFNTime 5.0f
+
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define RGB(r, g, b) RGBA((r), (g), (b), 1)
+
+#define MainTone [UIColor colorWithRed:0/255.0 green:140/255.0 blue:233/255.0 alpha:1]
+
+#define fontX(font) [UIFont systemFontOfSize:(font)];
+#define UIFontdefault [UIFont systemFontOfSize:20.0f];
+
+//深蓝#
+#define COLOR_DeepBlue [UIColor  colorWithHexString:@"#1D89E4"]
+//蓝色
+#define COLOR_Blue [UIColor      colorWithHexString:@"#00AFFE"]
+//紫色
+#define COLOR_Violet [UIColor    colorWithHexString:@"#9675CE"]
+//黄色
+#define COLOR_Yellow [UIColor    colorWithHexString:@"#FEA733"]
+//浅灰色
+#define COLOR_LightGray [UIColor colorWithHexString:@"#EBEBEB"]
+//深灰色
+#define COLOR_DarkGrey [UIColor  colorWithHexString:@"#858585"]
+//灰色
+#define COLOR_Grey [UIColor      colorWithHexString:@"#444444"]
+//红色
+#define COLOR_Gules [UIColor     colorWithHexString:@"#FF0000"]
+//
+//#define MANTIS [DanLi sharedDanLi].UpEnvironmental isEqualToString:@"mantis"]
+//
+//#define MONKEY [DanLi sharedDanLi].UpEnvironmental isEqualToString:@"monkey"]
+//
+//#define PRE [DanLi sharedDanLi].UpEnvironmental isEqualToString:@"pre"]
+//
+//#define MASTER [DanLi sharedDanLi].UpEnvironmental isEqualToString:@"master"]
+//
+//#define M [DanLi sharedDanLi].UpEnvironmental isEqualToString:@"m"]
+//
+
+//BOOL validateEmail(NSString* email)
+//{
+//    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+//    
+//    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+//    
+//    return [emailTest evaluateWithObject:email];
+//}
+
+
+//#ifdef DEBUG
+
+//#define URLw [NSString stringWithFormat:@"http://192.168.3.45:8088"]
+//#define URLw [NSString stringWithFormat:@"http://mantis.test.tripb.cn"]
+//#define URLw [NSString stringWithFormat:@"http://monkey.test.tripb.cn"]
+//#define URLw [NSString stringWithFormat:@"http://pre.tripb.cn"]
+//#define URLw [NSString stringWithFormat:@"http://master.test.tripb.cn"]
+//#define URLw [NSString stringWithFormat:@"http://m.tripb.cn"]
+//#else
+//#define URLw [NSString stringWithFormat:@"http://m.tripb.cn"]
+//#endif
+
+
+//#define URLt [NSString stringWithFormat:@"%@/api/user/",URLw]
+//#define URLz [NSString stringWithFormat:@"%@/api/msg/",URLw]
+//#define URLx [NSString stringWithFormat:@"%@/api/apply/",URLw]
+//#define URLy [NSString stringWithFormat:@"%@/Api/List/get_applylist/",URLw]
+
+//#define AFNurl(url,name) [NSString stringWithFormat:@"%@%@%@.html",URLw,url,name]
+
+//#define HTML(url) [NSString stringWithFormat:@"%@/%@.html",URLw,url]
+
+
+//#define AFNurlTwo(url,phone)  [NSString stringWithFormat:@"%@%@.html?keys=%@",URLt,url,phone]
+//#define AFNurlThree(url,parameter,phone,count,number) [NSString stringWithFormat:@"%@%@.html?%@=%@&%@=%@",URLz,url,parameter,phone,count,number]
+
+
+
+#endif /* PrefixHeader_pch */
