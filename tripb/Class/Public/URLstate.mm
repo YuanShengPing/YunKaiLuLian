@@ -12,7 +12,7 @@
 
 
 + (NSString *)URLstateWithString{
-
+///kzxhldnxzfnhszdpfnhpszdnfp
     if([[DanLi sharedDanLi].UpEnvironmental isEqualToString:@"mantis"]){
         
         return [NSString stringWithFormat:@"http://mantis.test.tripb.cn"];
