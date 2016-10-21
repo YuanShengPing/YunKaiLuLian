@@ -96,7 +96,7 @@
 		56D41DBE1CE18D78008FB098 /* aboutTripb.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D41DBD1CE18D78008FB098 /* aboutTripb.m */; };
 		56D41DC51CE18E71008FB098 /* aboutTripbTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D41DC31CE18E71008FB098 /* aboutTripbTableViewCell.m */; };
 		56D41DC61CE18E71008FB098 /* aboutTripbTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D41DC41CE18E71008FB098 /* aboutTripbTableViewCell.xib */; };
-		56D43FAB1DB5FD7000CB4F30 /* URLstate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D43FAA1DB5FD7000CB4F30 /* URLstate.m */; };
+		56D43FAB1DB5FD7000CB4F30 /* URLstate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 56D43FAA1DB5FD7000CB4F30 /* URLstate.mm */; };
 		56D6A08A1CE2BCF200BB3571 /* SearchCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D6A0891CE2BCF200BB3571 /* SearchCityViewController.m */; };
 		56D6A0971CE2D3F000BB3571 /* CCLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D6A0941CE2D3F000BB3571 /* CCLocationManager.m */; };
 		56D6A0981CE2D3F000BB3571 /* CLLocation+YCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D6A0961CE2D3F000BB3571 /* CLLocation+YCLocation.m */; };
@@ -358,7 +358,7 @@
 		56D41DC31CE18E71008FB098 /* aboutTripbTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aboutTripbTableViewCell.m; sourceTree = "<group>"; };
 		56D41DC41CE18E71008FB098 /* aboutTripbTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = aboutTripbTableViewCell.xib; sourceTree = "<group>"; };
 		56D43FA91DB5FD7000CB4F30 /* URLstate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLstate.h; sourceTree = "<group>"; };
-		56D43FAA1DB5FD7000CB4F30 /* URLstate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLstate.m; sourceTree = "<group>"; };
+		56D43FAA1DB5FD7000CB4F30 /* URLstate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = URLstate.mm; sourceTree = "<group>"; };
 		56D4ABBA1CC729F200B7C739 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../../../public/PrefixHeader.pch; sourceTree = "<group>"; };
 		56D6A0881CE2BCF200BB3571 /* SearchCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCityViewController.h; sourceTree = "<group>"; };
 		56D6A0891CE2BCF200BB3571 /* SearchCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCityViewController.m; sourceTree = "<group>"; };
@@ -1312,7 +1312,7 @@
 				56E2FDD71D5473A100F45F5A /* UIView+MGBadgeView.h */,
 				56E2FDD81D5473A100F45F5A /* UIView+MGBadgeView.m */,
 				56D43FA91DB5FD7000CB4F30 /* URLstate.h */,
-				56D43FAA1DB5FD7000CB4F30 /* URLstate.m */,
+				56D43FAA1DB5FD7000CB4F30 /* URLstate.mm */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -1591,7 +1591,7 @@
 				56F1C9CC1CBB7B820036E245 /* UIScrollView+MJExtension.m in Sources */,
 				56F1C9C81CBB7B820036E245 /* MJRefreshBaseView.m in Sources */,
 				56D9BABB1CE99F1D0093F7F4 /* WXApiRequestHandler.m in Sources */,
-				56D43FAB1DB5FD7000CB4F30 /* URLstate.m in Sources */,
+				56D43FAB1DB5FD7000CB4F30 /* URLstate.mm in Sources */,
 				56D6A0AB1CE3083100BB3571 /* FMDatabaseQueue.m in Sources */,
 				56F1C9C51CBB7B820036E245 /* NSObject+MJIvar.m in Sources */,
 				56CB8F0B1CB75A8400819618 /* AppDelegate.m in Sources */,
