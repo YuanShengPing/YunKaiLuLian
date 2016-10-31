@@ -106,7 +106,7 @@
         LoginState *state = [LoginState new];
         [state LoginStateWithBumber];
     
-        if ([state.phone isEqualToString:@"18501374593"] || [state.phone isEqualToString:@"18911201632"] || [state.phone isEqualToString:@"15501267321"] || [state.phone isEqualToString:@"15011380203"] || [state.phone isEqualToString:@"17600854366"] || [state.phone isEqualToString:@"13301021062"]) {
+        if ([state.phone isEqualToString:@"18501374593"] || [state.phone isEqualToString:@"18911201632"] || [state.phone isEqualToString:@"15501267321"] || [state.phone isEqualToString:@"15011380203"] || [state.phone isEqualToString:@"17600854366"] || [state.phone isEqualToString:@"13301021062"] || [state.phone isEqualToString:@"13581931246"] || [state.phone isEqualToString:@"15012469287"] ) {
                 return 4;
         }else{
             return 3;

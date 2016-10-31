@@ -302,7 +302,7 @@
     teamView.image = [UIImage imageNamed:@"home_team"];
     
     UILabel *team  = [UILabel new];
-    team.text = @"团队差旅";
+    team.text = @"部门差旅";
     team.centerX = WIDTH * 0.75 - 40;
     team.y  = 275;
     team.height = 20;
@@ -333,7 +333,6 @@
     LoginState *state = [LoginState new];
     if ([state NotLoginWithLogin]) {
         if (btn.tag==100) {
-//        NSLog(@"出差申请"); [self webviewWithURL:@"apply/apply"];
             TravelWebView *Travel = [TravelWebView new];
             [self.navigationController pushViewController:Travel animated:YES];
         }else if(btn.tag==101){
@@ -545,6 +544,7 @@
     
     [manager GET:URL parameters:nil success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
 //        login  logout
+        NSLog(@"responseObject:%@",responseObject);
         NSString *success = [responseObject objectForKey:@"result"];
         if ([@"success" isEqualToString:success]) {
             NSDictionary *data = [responseObject objectForKey:@"data"];

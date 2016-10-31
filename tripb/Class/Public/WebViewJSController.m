@@ -149,8 +149,7 @@
                     //            关闭当前窗口
              [wself.navigationController popViewControllerAnimated:YES];
             });});
-            
-//
+
         }else if([jsvlue isEqualToString:@"setCompany"]){
             // 注册了企业..
             [DanLi sharedDanLi].homeData = @"UphomeData";

@@ -169,8 +169,6 @@
     }
 
 }
-
-
 //获取验证码 只请求回来了数据
 - (void)phoneWithCode{
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];

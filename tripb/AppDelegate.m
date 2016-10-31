@@ -89,11 +89,11 @@ static BOOL isBackGroundActivateApplication;
         
         [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert + UNAuthorizationOptionSound + UNAuthorizationOptionBadge)
                               completionHandler:^(BOOL granted, NSError * _Nullable error) {
-                                  // Enable or disable features based on authorization.
-                                  if (granted) {
-                                      [application registerForRemoteNotifications];
-                                  }
-                              }];
+// Enable or disable features based on authorization.
+          if (granted) {
+        [application registerForRemoteNotifications];
+          }
+ }];
 #endif
     }
     else if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
@@ -102,6 +102,7 @@ static BOOL isBackGroundActivateApplication;
         UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:myTypes categories:nil];
         [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
     }else {
+     
         UIRemoteNotificationType myTypes = UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound;
         [[UIApplication sharedApplication] registerForRemoteNotificationTypes:myTypes];
     }

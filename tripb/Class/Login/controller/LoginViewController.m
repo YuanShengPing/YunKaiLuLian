@@ -163,14 +163,12 @@
     NSString *url =[NSString stringWithFormat:@"%@/api/user/send_sms_verify_code.html",[URLstate URLstateWithString]]; /*AFNurl(@"/api/user/", @"send_sms_verify_code");*/
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     dict[@"mobilenumber"] =self.phoneNumber.text;
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain", nil];
     
     [manager POST:url parameters:dict success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-        NSLog(@"responseObject:%@",responseObject);
+//        NSLog(@"responseObject:%@",responseObject);
         NSString *result = [responseObject objectForKeyedSubscript:@"result"];
-        if ([@"success"isEqualToString:result]) {
-//            NSLog(@"code=%@",[responseObject objectForKeyedSubscript:@"vcode"]);
-            return ;
-        }else{
+        if (![@"success"isEqualToString:result]){
             
             NSString *errormsg = [responseObject objectForKeyedSubscript:@"errormsg"];
 //            关闭定时器
@@ -279,6 +277,7 @@
     UIButton *clause = [[UIButton alloc]init];
     [clause addTarget:self action:@selector(ServiceProvision) forControlEvents:UIControlEventTouchDown];
     [clause setTitle:@"《差旅管家用户服务协议》" forState:UIControlStateNormal];
+    clause.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     clause.titleLabel.font = fontX(14);
     clause.width =200;
     clause.height =20;
@@ -371,7 +370,7 @@
     dict[@"mobilenumber"] = self.phoneNumber.text;
     dict[@"verifycode"] = self.Verification.text;
     dict[@"registerflag"] = @"true";
-
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain", nil];
     [manager POST:url parameters:dict success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
 //        NSLog(@"responseObject=%@",responseObject);
         
@@ -422,8 +421,9 @@
     
    
     NSString *url = [NSString stringWithFormat:@"%@/api/user/set_pushchannel.html?device=iOS&channelid=%@",[URLstate URLstateWithString],[DanLi sharedDanLi].channel_id];
-    NSLog(@"url : %@",url);
+//    NSLog(@"url : %@",url);
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain", nil];
     [manager GET:url parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         
         NSLog(@"=======%@",responseObject);

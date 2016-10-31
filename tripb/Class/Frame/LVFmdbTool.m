@@ -20,7 +20,7 @@ static FMDatabase *_fmdb;
     
     [_fmdb open];
     
-#warning 必须先打开数据库才能创建表。。。否则提示数据库没有打开
+//#warning 必须先打开数据库才能创建表。。。否则提示数据库没有打开
     [_fmdb executeUpdate:@"create table if not exists t_modals(ID integer primary key  autoincrement,order_id TEXT NOT NULL ,order_type TEXT NOT NULL,order_city_title TEXT NOT NULL,order_step TEXT NOT NULL,order_true_total_money TEXT NOT NULL,order_total_estimate TEXT NOT NULL,order_applyreason TEXT NOT NULL,order_status TEXT NOT NULL,order_reapply_flag TEXT NOT NULL,order_reapply_url TEXT NOT NULL,order_starttime TEXT NOT NULL,order_red_flag TEXT NOT NULL)"];
 
 }

@@ -89,8 +89,6 @@
 		56CC9EE61CC8A54700A65DE6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9EE51CC8A54700A65DE6 /* HomeViewController.m */; };
 		56CC9EE91CC8DB7F00A65DE6 /* ReserveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC9EE81CC8DB7F00A65DE6 /* ReserveViewController.m */; };
 		56CE8A391D0D3EFA00F7FA07 /* StateRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CE8A381D0D3EFA00F7FA07 /* StateRefresh.m */; };
-		56D041D41D93FC8500FEB12F /* libBPush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D041D21D93FC8500FEB12F /* libBPush.a */; };
-		56D041D51D93FC8500FEB12F /* test.caf in Resources */ = {isa = PBXBuildFile; fileRef = 56D041D31D93FC8500FEB12F /* test.caf */; };
 		56D3987A1CF6C9D00093D0E3 /* tripDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D398791CF6C9D00093D0E3 /* tripDetailsViewController.m */; };
 		56D41DBB1CE189F9008FB098 /* SettingDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D41DBA1CE189F9008FB098 /* SettingDetails.m */; };
 		56D41DBE1CE18D78008FB098 /* aboutTripb.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D41DBD1CE18D78008FB098 /* aboutTripb.m */; };
@@ -115,6 +113,8 @@
 		56E182831D01383B001395E2 /* UIColor-RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E182821D01383B001395E2 /* UIColor-RGB.m */; };
 		56E2BFF61D2B49E100D24247 /* LVFmdbTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E2BFF51D2B49E100D24247 /* LVFmdbTool.m */; };
 		56E2FDD91D5473A100F45F5A /* UIView+MGBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E2FDD81D5473A100F45F5A /* UIView+MGBadgeView.m */; };
+		56E61E8D1DC332D60093A552 /* libBPush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E61E8B1DC332D60093A552 /* libBPush.a */; };
+		56E61E8E1DC332D60093A552 /* test.caf in Resources */ = {isa = PBXBuildFile; fileRef = 56E61E8C1DC332D60093A552 /* test.caf */; };
 		56EB8E5E1CF2FF8400715450 /* YHWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EB8E5A1CF2FF8400715450 /* YHWebViewProgress.m */; };
 		56EB8E5F1CF2FF8400715450 /* YHWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EB8E5C1CF2FF8400715450 /* YHWebViewProgressView.m */; };
 		56F1C9B71CBB7B820036E245 /* NSDate+CH.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F1C93F1CBB7B820036E245 /* NSDate+CH.m */; };
@@ -345,9 +345,6 @@
 		56CC9EE81CC8DB7F00A65DE6 /* ReserveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReserveViewController.m; sourceTree = "<group>"; };
 		56CE8A371D0D3EFA00F7FA07 /* StateRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateRefresh.h; sourceTree = "<group>"; };
 		56CE8A381D0D3EFA00F7FA07 /* StateRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateRefresh.m; sourceTree = "<group>"; };
-		56D041D11D93FC8500FEB12F /* BPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPush.h; sourceTree = "<group>"; };
-		56D041D21D93FC8500FEB12F /* libBPush.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBPush.a; sourceTree = "<group>"; };
-		56D041D31D93FC8500FEB12F /* test.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.caf; sourceTree = "<group>"; };
 		56D398781CF6C9D00093D0E3 /* tripDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tripDetailsViewController.h; sourceTree = "<group>"; };
 		56D398791CF6C9D00093D0E3 /* tripDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tripDetailsViewController.m; sourceTree = "<group>"; };
 		56D41DB91CE189F9008FB098 /* SettingDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingDetails.h; sourceTree = "<group>"; };
@@ -395,6 +392,9 @@
 		56E2BFF51D2B49E100D24247 /* LVFmdbTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVFmdbTool.m; sourceTree = "<group>"; };
 		56E2FDD71D5473A100F45F5A /* UIView+MGBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MGBadgeView.h"; sourceTree = "<group>"; };
 		56E2FDD81D5473A100F45F5A /* UIView+MGBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MGBadgeView.m"; sourceTree = "<group>"; };
+		56E61E8A1DC332D60093A552 /* BPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPush.h; sourceTree = "<group>"; };
+		56E61E8B1DC332D60093A552 /* libBPush.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBPush.a; sourceTree = "<group>"; };
+		56E61E8C1DC332D60093A552 /* test.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.caf; sourceTree = "<group>"; };
 		56EB8E591CF2FF8400715450 /* YHWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWebViewProgress.h; sourceTree = "<group>"; };
 		56EB8E5A1CF2FF8400715450 /* YHWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHWebViewProgress.m; sourceTree = "<group>"; };
 		56EB8E5B1CF2FF8400715450 /* YHWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWebViewProgressView.h; sourceTree = "<group>"; };
@@ -520,7 +520,7 @@
 				5611C49F1CDA020100317FC4 /* JavaScriptCore.framework in Frameworks */,
 				5611C49D1CD9EF7700317FC4 /* WebKit.framework in Frameworks */,
 				56D9BAB31CE99E8E0093F7F4 /* libWeChatSDK.a in Frameworks */,
-				56D041D41D93FC8500FEB12F /* libBPush.a in Frameworks */,
+				56E61E8D1DC332D60093A552 /* libBPush.a in Frameworks */,
 				56BB0CB11CD1F687008C8759 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -962,16 +962,6 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		56D041D01D93FC8500FEB12F /* normalversion */ = {
-			isa = PBXGroup;
-			children = (
-				56D041D11D93FC8500FEB12F /* BPush.h */,
-				56D041D21D93FC8500FEB12F /* libBPush.a */,
-				56D041D31D93FC8500FEB12F /* test.caf */,
-			);
-			path = normalversion;
-			sourceTree = "<group>";
-		};
 		56D6A0921CE2D3F000BB3571 /* CCLocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1034,6 +1024,16 @@
 				56D6A09B1CE3083100BB3571 /* fmdb */,
 			);
 			name = FMDB;
+			sourceTree = "<group>";
+		};
+		56E61E891DC332D60093A552 /* normalversion */ = {
+			isa = PBXGroup;
+			children = (
+				56E61E8A1DC332D60093A552 /* BPush.h */,
+				56E61E8B1DC332D60093A552 /* libBPush.a */,
+				56E61E8C1DC332D60093A552 /* test.caf */,
+			);
+			path = normalversion;
 			sourceTree = "<group>";
 		};
 		56EB8E581CF2FF8400715450 /* WebProgressView */ = {
@@ -1286,8 +1286,8 @@
 		56F976F91CBB7D7D00391CAF /* NewFeature */ = {
 			isa = PBXGroup;
 			children = (
+				56E61E891DC332D60093A552 /* normalversion */,
 				5623D1011D9506430097E86E /* tripb.entitlements */,
-				56D041D01D93FC8500FEB12F /* normalversion */,
 				56D9BAAD1CE99E8E0093F7F4 /* OpenSDK1.7 */,
 			);
 			path = NewFeature;
@@ -1453,7 +1453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56D041D51D93FC8500FEB12F /* test.caf in Resources */,
+				56E61E8E1DC332D60093A552 /* test.caf in Resources */,
 				568F57221D3E180B0016965E /* Main.storyboard in Resources */,
 				56288C621D645F6300053C03 /* contactWaiterCell.xib in Resources */,
 				565222C51D221EE8004E881C /* tripb_cities.db in Resources */,
@@ -1746,7 +1746,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_ENTITLEMENTS = tripb/tripb.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YM7KA26P2V;
 				ENABLE_BITCODE = YES;
@@ -1783,7 +1783,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_ENTITLEMENTS = tripb/tripb.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YM7KA26P2V;
 				ENABLE_BITCODE = YES;

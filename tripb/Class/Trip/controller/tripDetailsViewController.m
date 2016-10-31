@@ -159,10 +159,14 @@
             
         }else if ([jsvlue isEqualToString:@"closeCurrentWindow"]){
             
-            [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
-            //            关闭当前窗口
-            [wself.navigationController popToRootViewControllerAnimated:YES];
-            
+            //    在主线程下执行
+            dispatch_async(dispatch_get_global_queue(0, 0), ^{
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
+                    //            关闭当前窗口
+                    [wself.navigationController popToRootViewControllerAnimated:YES];
+                });});
+
             if (args.count > 1) {
                 
                 if ([[NSString stringWithFormat:@"%@",args[1]] isEqualToString:@"orderUpData"]) {

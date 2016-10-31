@@ -95,18 +95,23 @@
         
         NSArray *args = [JSContext currentArguments];
         NSString *jsvlue = [NSString stringWithFormat:@"%@",args[0]];
+        NSLog(@"=========%@",args);
         
         if ([jsvlue isEqualToString:@"closeCurrentWindow"]) {
-            //            关闭当前窗口
-            [wself.navigationController popViewControllerAnimated:YES];
-            
+            //    在主线程下执行
+            dispatch_async(dispatch_get_global_queue(0, 0), ^{
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
+                    //            关闭当前窗口
+                    [wself.navigationController popViewControllerAnimated:YES];
+                });});
+
         }else if([jsvlue isEqualToString:@"setCompany"]){
             
             NSLog(@"已经注册企业");
             //             0-企业支付 1-微信支付 2-支付宝支付
         }else if([jsvlue isEqualToString:@"0"]){
             NSLog(@"企业支付");
-            
             //             NSLog(@"企业支付");
             CompanyPlay *Company = [CompanyPlay new];
             [wself.navigationController pushViewController:Company animated:YES];
@@ -142,8 +147,13 @@
             
             NSLog(@"支付宝");
             
-        }else{
-            NSLog(@"没有注册企业");
+        }if ([[NSString stringWithFormat:@"%@",args[0]] isEqualToString:@"orderUpData"]) {
+            
+            [DanLi sharedDanLi].UpData = @"UpData";
+            
+        }else if([[NSString stringWithFormat:@"%@",args[0]] isEqualToString:@"orderUpData"]){
+            
+            [DanLi sharedDanLi].UpData = @"UpOrder";
         }
         
         
